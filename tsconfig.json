@@ -1,0 +1,22 @@
+{
+  "include": [
+    "src",
+    "node_modules/@t8/webapp"
+  ],
+  "compilerOptions": {
+    "outDir": "dist",
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  }
+}

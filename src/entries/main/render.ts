@@ -6,9 +6,9 @@ export const render: Controller = () => {
 
         res.send(
             '<!DOCTYPE html>' +
-            '<html><head><meta charset="utf-8"/>' +
-            '<meta name="viewport" content="width=device-width"/>' +
-            '<link type="image/x-icon" rel="icon" href="/favicon.svg"/>' +
+            '<html><head><meta charset="utf-8">' +
+            '<meta name="viewport" content="width=device-width">' +
+            '<link rel="icon" type="image/svg+xml" href="/favicon.svg">' +
             '<title>Intro</title>' +
             `<style${nonce ? ` nonce="${nonce}"` : ''}>` +
             '.layout { max-width: 36em; margin: 0 auto; }</style>' +

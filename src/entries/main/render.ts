@@ -1,4 +1,4 @@
-import type {Controller} from '@t8/webapp';
+import type {Controller} from '@t8/webapp-core';
 
 export const render: Controller = () => {
     return (req, res) => {

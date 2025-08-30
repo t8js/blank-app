@@ -16,7 +16,7 @@ export const render: Controller = () => {
             '<main><h1>Intro</h1>' +
             '<p>This is demo content. Lorem ipsum dolor, ' +
             'quam velit, tincidunt vitae suscipit nullam.</p>' +
-            '</main><footer><hr><p><em>@t8/webapp-blank</em></p></footer>' +
+            '</main><footer><hr><p><em>@t8/blank-app</em></p></footer>' +
             '</div></body></html>\n',
         );
     };

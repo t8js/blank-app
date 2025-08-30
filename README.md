@@ -1,5 +1,5 @@
 ```
-npx degit t8js/webapp-blank my-app
+npx degit t8js/blank-app my-app
 cd my-app
 npm i
 npm start

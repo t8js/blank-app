@@ -1,7 +1,7 @@
-import {Router, static as expressStatic} from 'express';
-import {render} from './render';
+import { static as expressStatic, Router } from "express";
+import { render } from "./render";
 
 export let server = Router();
 
-server.use('/_main/', expressStatic('src/entries/main/public'));
-server.get('/', render());
+server.use("/_main/", expressStatic("src/entries/main/public"));
+server.get("/", render());

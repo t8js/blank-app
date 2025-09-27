@@ -31,7 +31,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@t8/webapp-core": "^0.1.5",
+    "@t8/webapp-core": "^0.1.6",
     "express": "^5.1.0"
   }
 }

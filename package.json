@@ -22,7 +22,7 @@
   "author": "axtk",
   "license": "ISC",
   "devDependencies": {
-    "@t8/webapp-build": "^0.1.6",
+    "@t8/webapp-build": "^0.1.8",
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "cross-env": "^10.0.0",

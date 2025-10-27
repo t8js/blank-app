@@ -22,7 +22,7 @@
   "author": "axtk",
   "license": "MIT",
   "devDependencies": {
-    "@t8/webapp-build": "^0.1.11",
+    "@t8/webapp-build": "^0.1.16",
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "cross-env": "^10.0.0",

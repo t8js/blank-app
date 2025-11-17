@@ -1,5 +1,5 @@
 import { static as expressStatic, Router } from "express";
-import { render } from "./render";
+import { render } from "./render.ts";
 
 export let server = Router();
 

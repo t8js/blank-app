@@ -4,13 +4,14 @@
   "private": true,
   "description": "",
   "main": "dist/server/index.js",
+  "type": "module",
   "scripts": {
     "build": "webapp-build src/public",
     "dev": "npm-run-all dev-init init-entries dev-watch",
     "dev-init": "webapp-build src/public --init --clean",
     "dev-rebuild": "webapp-build src/public --skip-init",
     "dev-watch": "nodemon --watch src -e * --ignore **/public/** --exec \"cross-env NODE_ENV=development npm-run-all dev-rebuild serve\"",
-    "init-entries": "node dist/entries/init.js",
+    "init-entries": "node dist/init/index.js",
     "preversion": "npm-run-all typecheck shape",
     "prod": "cross-env NODE_ENV=production APP_HOST=127.0.0.1 APP_PORT=3000 npm-run-all prod-build init-entries serve",
     "prod-build": "webapp-build src/public --clean --silent",
@@ -22,7 +23,7 @@
   "author": "axtk",
   "license": "MIT",
   "devDependencies": {
-    "@t8/webapp-build": "^0.1.16",
+    "@t8/webapp-build": "^0.1.18",
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "cross-env": "^10.0.0",
@@ -31,7 +32,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
-    "@t8/webapp-core": "^0.1.8",
+    "@t8/webapp-core": "^0.1.10",
     "express": "^5.1.0"
   }
 }

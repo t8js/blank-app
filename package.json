@@ -6,9 +6,9 @@
   "main": "dist/server/index.js",
   "type": "module",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webapp-build src/public --clean --watch",
+    "dev": "webapp-dev",
     "preversion": "npm-run-all typecheck shape",
-    "prod": "cross-env NODE_ENV=production APP_HOST=127.0.0.1 APP_PORT=3000 webapp-build src/public --clean --silent",
+    "prod": "webapp-prod 127.0.0.1:3000",
     "shape": "npx codeshape",
     "start": "npm run dev",
     "typecheck": "tsc --noEmit"
@@ -16,7 +16,7 @@
   "author": "axtk",
   "license": "MIT",
   "devDependencies": {
-    "@t8/webapp-build": "^0.2.2",
+    "@t8/webapp-build": "^0.3.1",
     "@types/express": "^5.0.6",
     "@types/node": "^24.10.1",
     "cross-env": "^10.1.0",
